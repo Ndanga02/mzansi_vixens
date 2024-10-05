@@ -1,0 +1,75 @@
+.main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.escorts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.escort-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.escort-card:hover {
+    transform: scale(1.05);
+}
+
+.escort-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.escort-name {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.escort-town, .escort-age, .escort-message {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #8B0A22; /* Dark red background to match your theme */
+    color: #FFD700; /* Gold text color for readability */
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #FFD700; /* Same gold color for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #FF4500; /* Change link color on hover for effect */
+}
+
+footer a:visited {
+    color: #FFD700; /* Keep visited links gold */
+}

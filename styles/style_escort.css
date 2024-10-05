@@ -1,0 +1,230 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #821131;
+}
+
+h1, h2 {
+    color: #FABC3F; 
+}
+
+p {
+    color: #FABC3F;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #821131;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the Home and Cities/Town buttons in the navbar */
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #FABC3F; 
+    border-color: #FABC3F ;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-center a:hover {
+    background-color: #FABC3F; /* Change background on hover */
+    color: #821131;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #FABC3F; /* Dropdown background color */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add some shadow for the dropdown */
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #821131; /* Same as navbar text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+    background-color: #821131;
+    color: #FABC3F;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown when hovering over the Cities/Town button */
+}
+
+
+.login-buttons button {
+   
+    background-color: #FABC3F; /* Yellow */
+    color: #821131; /* Dark Red Text */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Main Content Layout */
+.main-container {
+    width: 60%;
+    padding: 100px 20px;
+    margin: 0 auto;
+
+}
+
+/* Escort Profile */
+.escort-profile {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.escort-gallery {
+    width: 40%;
+}
+
+/* Style and resize escort images */
+.escort-gallery img {
+    width: 100%; 
+    height: 250px; 
+    border-radius: 8px;
+    border: 3px solid #FABC3F;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: contain; 
+    object-position: center; 
+    transition: transform 0.3s ease; 
+}
+
+/* Add rotation effect to images for styling */
+.escort-gallery img:nth-child(1) {
+    transform: rotate(-5deg);
+}
+
+.escort-gallery img:nth-child(2) {
+    transform: rotate(5deg);
+}
+
+.escort-gallery img:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
+/* Hover effect to slightly rotate the image back to normal */
+.escort-gallery img:hover {
+    transform: rotate(0deg); /* Hover resets rotation */
+}
+
+
+
+.escort-details {
+    width: 60%;
+}
+
+.escort-info-box {
+    background-color: #B8001F;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.slideshow-button {
+    background-color: #FABC3F;
+    color: #821131;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.locked-gallery {
+    background-color: #B8001F;
+    color: #FABC3F;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 30px;
+}
+
+.review {
+    background-color: #B8001F;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #FABC3F;
+}
+
+.ad-space {
+    
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+footer {
+    background-color: #8B0A22; /* Dark red background to match your theme */
+    color: #FFD700; /* Gold text color for readability */
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #FFD700; /* Same gold color for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #FF4500; /* Change link color on hover for effect */
+}
+
+footer a:visited {
+    color: #FFD700; /* Keep visited links gold */
+}

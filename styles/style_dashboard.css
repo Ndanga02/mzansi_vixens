@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    font-family: 'Kalam', cursive;
+    margin: 0;
+    background-color: #B8001F;
+    color: #FABC3F;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #821131;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the Home and Cities/Town buttons in the navbar */
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #FABC3F; 
+    border-color: #FABC3F ;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-center a:hover {
+    background-color: #FABC3F; /* Change background on hover */
+    color: #821131;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #FABC3F; /* Dropdown background color */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add some shadow for the dropdown */
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #821131; /* Same as navbar text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+    background-color: #821131;
+    color: #FABC3F;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown when hovering over the Cities/Town button */
+}
+
+
+.login-buttons button {
+   
+    background-color: #FABC3F; /* Yellow */
+    color: #821131; /* Dark Red Text */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+/* Dashboard Container */
+.dashboard-container {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #821131;
+    color: #FABC3F;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.dashboard-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Navigation Links */
+.dashboard-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #FABC3F;
+    font-size: 18px;
+}
+
+.dashboard-link:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+.dashboard-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-section form label {
+    margin-top: 10px;
+}
+
+.dashboard-section form input,
+.dashboard-section form select,
+.dashboard-section form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.update-btn, .upload-btn, .renew-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #FABC3F;
+    border: none;
+    color: #821131;
+    cursor: pointer;
+}
+
+.update-btn:hover, .upload-btn:hover, .renew-btn:hover {
+    background-color: #d09e33;
+}
+
+/* Gallery Display */
+.gallery-display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.gallery-display img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Message and Review List */
+.message-list, .review-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.message-list li, .review-list li {
+    margin-bottom: 15px;
+}
+
+.message-list a, .review-list a {
+    color: #FABC3F;
+    text-decoration: underline;
+}
+
+.message-list a:hover, .review-list a:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #8B0A22; /* Dark red background to match your theme */
+    color: #FFD700; /* Gold text color for readability */
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #FFD700; /* Same gold color for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #FF4500; /* Change link color on hover for effect */
+}
+
+footer a:visited {
+    color: #FFD700; /* Keep visited links gold */
+}
