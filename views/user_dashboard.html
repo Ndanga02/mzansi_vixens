@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Mzansi Vixens</title>
+    <link rel="stylesheet" href="..\styles\style_dashboard.css">
+</head>
+<body>
+
+<!-- Fixed Navbar -->
+<nav class="navbar">
+    <div class="nav-center">
+        <a href="index.html" class="nav-button" onclick="goHome()">Home</a>
+        <!-- Cities/Town dropdown -->
+        <div class="dropdown">
+            <a href="#" class="nav-button dropdown-btn">Cities/Town ↓↓</a>
+            <div class="dropdown-content">
+                <a href="phalaborwa_escorts.html">Phalaborwa</a>
+                <a href="thohoyandou_escorts.html">Thohoyandou</a>
+                <a href="tzaneen_escorts.html">Tzaneen</a>
+                <a href="polokwane_escorts.html">Polokwane</a>
+            </div>
+        </div>
+    </div>
+    
+    
+  
+    <div class="login-buttons">
+        <button class="glitter-button">Login</button>
+        <button class="glitter-button">Register</button>
+    </div>
+</nav>
+
+    <!-- Dashboard Section -->
+    <div class="dashboard-container">
+        <h1 class="dashboard-title">Welcome, [Escort Name]</h1>
+
+        <!-- Dashboard Navigation Links -->
+        <div class="dashboard-nav">
+            <a href="#profile" class="dashboard-link">Edit Profile</a>
+            <a href="#gallery" class="dashboard-link">Manage Gallery</a>
+            <a href="#subscriptions" class="dashboard-link">Subscription Status</a>
+            <a href="#messages" class="dashboard-link">Messages</a>
+            <a href="#reviews" class="dashboard-link">Manage Reviews</a>
+        </div>
+
+        <!-- Profile Section -->
+        <div id="profile" class="dashboard-section">
+            <h2 class="section-title">Edit Profile</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="[Escort Name]" required>
+
+                <label for="town">Town/City:</label>
+                <select id="town">
+                    <option value="phalaborwa">Phalaborwa</option>
+                    <option value="thohoyandou">Thohoyandou</option>
+                    <option value="tzaneen">Tzaneen</option>
+                    <option value="polokwane">Polokwane</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" rows="4">Write about yourself or your services here...</textarea>
+
+                <button type="submit" class="update-btn">Update Profile</button>
+            </form>
+        </div>
+
+        <!-- Gallery Section -->
+        <div id="gallery" class="dashboard-section">
+            <h2 class="section-title">Manage Gallery</h2>
+            <div class="gallery-display">
+                <img src="img/OIP.jpg" alt="Escort Image 1">
+                <img src="img/OIP.jpg" alt="Escort Image 2">
+                <img src="img/OIP.jpg" alt="Escort Image 3">
+            </div>
+            <button class="upload-btn">Upload New Image</button>
+        </div>
+
+        <!-- Subscription Section -->
+        <div id="subscriptions" class="dashboard-section">
+            <h2 class="section-title">Subscription Status</h2>
+            <p>Your subscription is <strong>active</strong> until [Date].</p>
+            <button class="renew-btn">Renew Subscription</button>
+        </div>
+
+        <!-- Messages Section -->
+        <div id="messages" class="dashboard-section">
+            <h2 class="section-title">Messages</h2>
+            <ul class="message-list">
+                <li><strong>Client 1:</strong> "Hello, I'd like to book a session." - <a href="#">Reply</a></li>
+                <li><strong>Client 2:</strong> "Can I see more pictures?" - <a href="#">Reply</a></li>
+            </ul>
+        </div>
+
+        <!-- Reviews Section -->
+        <div id="reviews" class="dashboard-section">
+            <h2 class="section-title">Manage Reviews</h2>
+            <ul class="review-list">
+                <li><strong>Client 1:</strong> "Great service, 5 stars!" - <a href="#">Remove</a></li>
+                <li><strong>Client 2:</strong> "Good experience, will book again." - <a href="#">Remove</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mzansi Vixens. All rights reserved.</p>
+        <p>
+            <a href="terms_and_conditions.html">Terms and Conditions</a> | 
+            <a href="disclaimer.html">Disclaimer</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Mzansi Vixens</title>
+    <link rel="stylesheet" href="..\styles\style_register.css">
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <a href="index.html" class="nav-button" onclick="goHome()">Home</a>
+            <!-- Cities/Town dropdown -->
+            <div class="dropdown">
+                <a href="#" class="nav-button dropdown-btn">Cities/Town ↓↓</a>
+                <div class="dropdown-content">
+                    <a href="phalaborwa_escorts.html">Phalaborwa</a>
+                    <a href="thohoyandou_escorts.html">Thohoyandou</a>
+                    <a href="tzaneen_escorts.html">Tzaneen</a>
+                    <a href="polokwane_escorts.html">Polokwane</a>
+                </div>
+            </div>
+        </div>
+        
+        
+      
+        <div class="login-buttons">
+            <button class="glitter-button">Login</button>
+            <button class="glitter-button">Register</button>
+        </div>
+    </nav>
+    <!-- Register Form -->
+    <div class="register-container">
+        <h1 class="register-title">Create Your Account</h1>
+        <form class="register-form">
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <!-- Cellphone Number -->
+            <label for="cellphone">Cellphone Number:</label>
+            <input type="tel" id="cellphone" name="cellphone" placeholder="Enter your cellphone number" required>
+            
+            <!-- Security Key -->
+            <label for="securityKey">Security Key:</label>
+            <input type="text" id="securityKey" name="securityKey" placeholder="Enter a security key" required>
+
+            <!-- Agree to Terms & Conditions -->
+            <div class="tcs-container">
+                <input type="checkbox" id="tcs" name="tcs" required>
+                <label for="tcs">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mzansi Vixens. All rights reserved.</p>
+        <p>
+            <a href="terms_and_conditions.html">Terms and Conditions</a> | 
+            <a href="disclaimer.html">Disclaimer</a>
+        </p>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>

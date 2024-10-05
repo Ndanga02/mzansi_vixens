@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\styles\style_forum.css">
+    <title>Forum - Mzansi Vixens</title>
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <a href="index.html" class="nav-button" onclick="goHome()">Home</a>
+            <!-- Cities/Town dropdown -->
+            <div class="dropdown">
+                <a href="#" class="nav-button dropdown-btn">Cities/Town ↓↓</a>
+                <div class="dropdown-content">
+                    <a href="phalaborwa_escorts.html">Phalaborwa</a>
+                    <a href="thohoyandou_escorts.html">Thohoyandou</a>
+                    <a href="tzaneen_escorts.html">Tzaneen</a>
+                    <a href="polokwane_escorts.html">Polokwane</a>
+                </div>
+            </div>
+        </div>
+        
+        
+      
+        <div class="login-buttons">
+            <button class="glitter-button">Login</button>
+            <button class="glitter-button">Register</button>
+        </div>
+    </nav>
+
+    <!-- Forum Content -->
+    <div class="forum-container">
+        <h1 class="forum-title">Mzansi Vixens Forum {Coming Soon!}</h1>
+
+        <!-- Forum Categories -->
+        <div class="forum-categories">
+            <button class="category-btn" onclick="filterCategory('Escort Discussions')">Escort Discussions</button>
+            <button class="category-btn" onclick="filterCategory('Services')">Services</button>
+            <button class="category-btn" onclick="filterCategory('Reviews')">Reviews</button>
+            <button class="category-btn" onclick="filterCategory('General')">General</button>
+        </div>
+
+        <!-- Recent Topics -->
+        <h2 class="section-title">Recent Topics</h2>
+        <div class="forum-topics">
+            <div class="topic-item">
+                <h3 class="topic-title"><a href="#">Hey loves, I'll be in tzaneen this week. HMU</a></h3>
+                <p class="topic-meta">Posted by: Samantha | 10 Replies</p>
+                <button class="upvote-btn">&#9650;</button> <button class="downvote-btn">&#9660;</button>
+            </div>
+            <div class="topic-item">
+                <h3 class="topic-title"><a href="#">Rose gave me the best sloppy top</a></h3>
+                <p class="topic-meta">Posted by: John | 20 Replies</p>
+                <button class="upvote-btn">&#9650;</button> <button class="downvote-btn">&#9660;</button>
+            </div>
+        </div>
+
+        <!-- New Thread Section (visible to logged-in users only) -->
+        <div class="new-thread-section">
+            <h2 class="section-title">Start a New Discussion</h2>
+            <form class="new-thread-form">
+                <input type="text" placeholder="Thread Title" required class="thread-input">
+                <select class="category-select">
+                    <option value="Escort Discussions">Escort Discussions</option>
+                    <option value="Services">Services</option>
+                    <option value="Reviews">Reviews</option>
+                    <option value="General">General</option>
+                </select>
+                <textarea placeholder="Write your post here..." required class="thread-textarea"></textarea>
+                <button type="submit" class="submit-btn">Post</button>
+            </form>
+        </div>
+
+        <!-- Login Prompt for Guests -->
+        <div class="login-prompt">
+            <p>You must <a href="#">login</a> to create or reply to threads.</p>
+        </div>
+
+        <!-- Pagination for Forum Threads -->
+        <div class="pagination">
+            <button class="page-btn">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">Next &#9654;</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Mzansi Vixens. All rights reserved.</p>
+            <p>
+                <a href="terms_and_conditions.html">Terms and Conditions</a> | 
+                <a href="disclaimer.html">Disclaimer</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="forum.js"></script>
+</body>
+</html>

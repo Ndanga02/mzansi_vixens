@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mzansi Vixens</title>
+    <link rel="stylesheet" href="..\styles\style_login.css">
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <a href="index.html" class="nav-button" onclick="goHome()">Home</a>
+            <!-- Cities/Town dropdown -->
+            <div class="dropdown">
+                <a href="#" class="nav-button dropdown-btn">Cities/Town ↓↓</a>
+                <div class="dropdown-content">
+                    <a href="phalaborwa_escorts.html">Phalaborwa</a>
+                    <a href="thohoyandou_escorts.html">Thohoyandou</a>
+                    <a href="tzaneen_escorts.html">Tzaneen</a>
+                    <a href="polokwane_escorts.html">Polokwane</a>
+                </div>
+            </div>
+        </div>
+        
+        
+      
+        <div class="login-buttons">
+            <button class="glitter-button">Login</button>
+            <button class="glitter-button">Register</button>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h1 class="login-title">Login to Your Account</h1>
+        <form class="login-form">
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <!-- Remember Me Checkbox -->
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Forgot your password?</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mzansi Vixens. All rights reserved.</p>
+        <p>
+            <a href="terms_and_conditions.html">Terms and Conditions</a> | 
+            <a href="disclaimer.html">Disclaimer</a>
+        </p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
